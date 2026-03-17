@@ -294,6 +294,7 @@ body {
   background: transparent;
   color: var(--color-text-primary);
   transition: background .15s;
+  text-decoration: none;
 }
 
 .btn-sm:hover {

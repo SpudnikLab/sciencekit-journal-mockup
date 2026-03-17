@@ -10,7 +10,7 @@
 <div class="shell">
   <div class="sb"><div class="sb-logo"><div class="logo-box"><svg viewBox="0 0 16 16"><path d="M8 1a1 1 0 011 1v1.5a3.5 3.5 0 010 7V12a1 1 0 11-2 0v-.5a3.5 3.5 0 010-7V2a1 1 0 011-1zm-2.5 7a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg></div><div class="logo-text">ScienceKit<br><span class="logo-sub">Journal</span></div></div>
   <div class="sb-nav"><div class="sb-sec">Main</div><a class="sb-item " href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Dashboard</a><a class="sb-item " href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>My Journals</a><a class="sb-item on" href="create.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v5M5 7.5h5"/></svg>Create Journal Entry</a><div class="sb-sec">Community</div><a class="sb-item " href="citizen.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="5" r="2.5"/><path d="M2 13c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg>Share to Citizen Science</a><a class="sb-item " href="p2p.html"><svg viewBox="0 0 15 15"><circle cx="3.5" cy="7.5" r="2"/><circle cx="11.5" cy="7.5" r="2"/><circle cx="7.5" cy="3" r="2"/><path d="M5.4 7H9.6M7.5 5v1.5"/></svg>P2P Collaboration</a><div class="sb-sec">Explore</div><a class="sb-item " href="usecases.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v2.5l2 1"/></svg>Use Cases & Experiments</a><a class="sb-item " href="archive.html"><svg viewBox="0 0 15 15"><rect x="1.5" y="3" width="12" height="3" rx="1"/><path d="M2.5 6v7h10V6"/><path d="M6 9h3"/></svg>Archive</a></div>
-  <div class="sb-bottom"><div class="sb-user"><div class="av">FD</div><div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Firyal D.</div><div style="font-size:11px;color:var(--color-text-secondary)">Researcher</div></div><a href="../auth/index.html" style="margin-left:auto;color:var(--gr400)"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 2H2a1 1 0 00-1 1v8a1 1 0 001 1h3M9 10l3-3-3-3M12 7H5"/></svg></a></div></div>
+  <div class="sb-bottom"><div class="sb-user"><div class="av">FD</div><div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Firyal D.</div><div style="font-size:11px;color:var(--color-text-secondary)">Researcher</div></div><a href="../auth/login.html" style="margin-left:auto;color:var(--gr400)"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 2H2a1 1 0 00-1 1v8a1 1 0 001 1h3M9 10l3-3-3-3M12 7H5"/></svg></a></div></div>
 </div>
   <div class="main">
     <div class="page on">
@@ -26,6 +26,23 @@
     <div class="scard"><div class="slabel">Nitrogen</div><div class="sval">38<span class="sunit">mg</span></div><span class="bg bg-red" style="margin-top:5px;display:inline-block">low</span></div>
     <div class="scard"><div class="slabel">Phosphorus</div><div class="sval">12<span class="sunit">mg</span></div><span class="bg bg-amber" style="margin-top:5px;display:inline-block">adequate</span></div>
   </div>
+
+  <!-- Live Chart -->
+  <div style="background:white;border-radius:var(--border-radius-lg);border:0.5px solid var(--color-border-tertiary);padding:16px;margin-top:12px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+      <div>
+        <div style="font-size:13px;font-weight:500;color:var(--color-text-primary)">Live Data Stream</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">Last 60 seconds</div>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:5px"><span style="width:20px;height:3px;background:#639922;border-radius:2px;display:inline-block"></span><span style="font-size:11px;color:var(--color-text-secondary)">Moisture</span></div>
+        <div style="display:flex;align-items:center;gap:5px"><span style="width:20px;height:3px;background:#1D9E75;border-radius:2px;display:inline-block"></span><span style="font-size:11px;color:var(--color-text-secondary)">Temp</span></div>
+        <div style="display:flex;align-items:center;gap:5px"><span style="width:20px;height:3px;background:#378ADD;border-radius:2px;display:inline-block"></span><span style="font-size:11px;color:var(--color-text-secondary)">pH</span></div>
+      </div>
+    </div>
+    <canvas id="liveChart" style="width:100%;height:160px;display:block"></canvas>
+  </div>
+
 </div></div>
 <div class="bbar"><span style="font-size:12px;color:var(--color-text-secondary)">Step 2 of 3 — Recording Sensor Data</span><div style="display:flex;gap:8px"><a href="create.html" class="btn-sm">← Back</a><a href="save.html" class="btn-sm btn-primary">Stop & Continue →</a></div></div>
     </div>
@@ -37,13 +54,124 @@
       <div style="font-size:13px;font-weight:500;color:var(--color-text-primary)">Firyal D.</div>
       <div style="font-size:11px;color:var(--color-text-secondary);margin-top:1px">Researcher · SpudnikLab</div>
     </div>
-    <a href="../auth/index.html" style="display:flex;align-items:center;gap:10px;padding:12px 14px;text-decoration:none;color:var(--r800)">
+    <a href="../auth/login.html" style="display:flex;align-items:center;gap:10px;padding:12px 14px;text-decoration:none;color:var(--r800)">
       <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 2H2a1 1 0 00-1 1v8a1 1 0 001 1h3M9 10l3-3-3-3M12 7H5"/></svg>
       <span style="font-size:13px;font-weight:500">Sign Out</span>
     </a>
   </div>
 </div>
   <script>
+    /* ── Live Chart ── */
+    (function() {
+      var canvas = document.getElementById('liveChart');
+      var ctx = canvas.getContext('2d');
+      var W, H;
+      var POINTS = 60;
+
+      // Data series: moisture (0-100), temp (0-40 scaled), pH (0-14 scaled)
+      var series = {
+        moisture: { color: '#639922', fill: 'rgba(99,153,34,.08)', data: [], base: 67, amp: 4 },
+        temp:     { color: '#1D9E75', fill: 'rgba(29,158,117,.07)', data: [], base: 60, amp: 3 },
+        ph:       { color: '#378ADD', fill: 'rgba(55,138,221,.07)', data: [], base: 46, amp: 2.5 }
+      };
+
+      // Pre-fill data
+      var keys = Object.keys(series);
+      for (var i = 0; i < POINTS; i++) {
+        keys.forEach(function(k) {
+          var s = series[k];
+          var prev = s.data.length ? s.data[s.data.length-1] : s.base;
+          var next = prev + (Math.random() - 0.5) * s.amp * 2;
+          next = Math.max(s.base - s.amp * 4, Math.min(s.base + s.amp * 4, next));
+          s.data.push(next);
+        });
+      }
+
+      function resize() {
+        var rect = canvas.parentElement.getBoundingClientRect();
+        W = canvas.width  = rect.width - 32; // account for card padding
+        H = canvas.height = 160;
+      }
+
+      function drawSeries(s) {
+        var step = W / (POINTS - 1);
+        var min = s.base - s.amp * 5;
+        var max = s.base + s.amp * 5;
+        var range = max - min || 1;
+        function yOf(v) { return H - 8 - ((v - min) / range) * (H - 20); }
+
+        ctx.beginPath();
+        s.data.forEach(function(v, i) {
+          var x = i * step, y = yOf(v);
+          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        });
+        // Fill
+        var fillPath = new Path2D(new Path2D());
+        ctx.save();
+        ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.closePath();
+        ctx.fillStyle = s.fill;
+        ctx.fill();
+        ctx.restore();
+
+        // Line
+        ctx.beginPath();
+        s.data.forEach(function(v, i) {
+          var x = i * step, y = yOf(v);
+          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        });
+        ctx.strokeStyle = s.color;
+        ctx.lineWidth = 2;
+        ctx.lineJoin = 'round';
+        ctx.stroke();
+
+        // Live dot at end
+        var last = s.data[s.data.length - 1];
+        ctx.beginPath();
+        ctx.arc(W, yOf(last), 4, 0, Math.PI * 2);
+        ctx.fillStyle = s.color;
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(W, yOf(last), 7, 0, Math.PI * 2);
+        ctx.fillStyle = s.color.replace(')', ',.2)').replace('rgb', 'rgba');
+        ctx.fill();
+      }
+
+      function drawGrid() {
+        ctx.strokeStyle = '#F0EEE8';
+        ctx.lineWidth = 1;
+        for (var i = 0; i <= 4; i++) {
+          var y = Math.round(8 + (i / 4) * (H - 20)) + 0.5;
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(W, y);
+          ctx.stroke();
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        drawGrid();
+        keys.forEach(function(k) { drawSeries(series[k]); });
+      }
+
+      function tick() {
+        keys.forEach(function(k) {
+          var s = series[k];
+          var prev = s.data[s.data.length - 1];
+          var next = prev + (Math.random() - 0.5) * s.amp * 2;
+          next = Math.max(s.base - s.amp * 4, Math.min(s.base + s.amp * 4, next));
+          s.data.push(next);
+          if (s.data.length > POINTS) s.data.shift();
+        });
+        draw();
+      }
+
+      resize();
+      draw();
+      setInterval(tick, 800);
+      window.addEventListener('resize', function() { resize(); draw(); });
+    })();
+
     function toggleProfile(e) {
       e.stopPropagation();
       var p = document.getElementById('profile-popup');
