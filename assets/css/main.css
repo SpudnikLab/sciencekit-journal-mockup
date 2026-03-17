@@ -76,9 +76,17 @@
   --p800: #3C3489;
 }
 
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: var(--font-sans);
   background: var(--color-background-tertiary);
+   margin: 0 !important;
 }
 
 
@@ -87,12 +95,10 @@ body {
    ============================================================ */
 
 .shell {
+  position: fixed;
+  inset: 0;
   display: flex;
-  height: 100vh;
-  min-height: 680px;
   background: white;
-  border-radius: var(--border-radius-lg);
-  border: 0.5px solid var(--color-border-secondary);
   overflow: hidden;
 }
 
@@ -875,6 +881,17 @@ body {
 
 .bnav { display: none; }
 
+/* Community popup & overlay — hidden on desktop, shown only on mobile */
+.bnav-comm-popup,
+.bnav-comm-overlay { display: none; }
+
+/* Profile popup & overlay — hidden on desktop, shown only on mobile */
+.profile-popup,
+.profile-overlay { display: none; }
+
+/* Mobile-only topbar avatar — hidden on desktop */
+.tb-av-mobile { display: none; }
+
 
 /* ============================================================
    22. RESPONSIVE — MOBILE (max-width: 768px)
@@ -882,6 +899,7 @@ body {
 
 @media (max-width: 768px) {
 
+  html, body { overflow: hidden; }
   body { background: white; }
 
   /* Shell: full screen, no rounded corners */
@@ -1016,6 +1034,7 @@ body {
 
   /* ── Community popup (above bottom nav) ── */
   .bnav-comm-popup {
+    display: block;
     position: fixed;
     bottom: 66px;
     right: 14px;
@@ -1062,5 +1081,37 @@ body {
     position: fixed; inset: 0; z-index: 299;
   }
   .bnav-comm-overlay.open { display: block; }
+
+  /* ── Topbar mobile avatar ── */
+  .tb-av-mobile { display: flex; cursor: pointer; }
+
+  /* ── Profile popup (below topbar) ── */
+  .profile-popup {
+    display: block;
+    position: fixed;
+    top: 52px;
+    right: 10px;
+    background: white;
+    border: 0.5px solid var(--color-border-secondary);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,.13);
+    z-index: 400;
+    width: 210px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px) scale(.97);
+    pointer-events: none;
+    transition: opacity .15s, transform .15s;
+  }
+  .profile-popup.open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+  .profile-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 399;
+  }
+  .profile-overlay.open { display: block; }
 
 } /* end @media 768px */
