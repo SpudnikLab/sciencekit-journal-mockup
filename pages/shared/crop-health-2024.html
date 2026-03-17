@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Crop Health 2024 — Shared Journal · ScienceKit</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    body { background:#f8f9f5;min-height:100vh;margin:0 }
+    .pub-nav { background:white;border-bottom:0.5px solid var(--color-border-secondary);padding:0 20px;height:52px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:10 }
+    .pub-wrap { max-width:640px;margin:0 auto;padding:20px 16px 48px }
+  </style>
+</head>
+<body>
+
+  <!-- Public nav -->
+  <div class="pub-nav">
+    <div class="logo-box" style="width:28px;height:28px">
+      <svg viewBox="0 0 16 16"><path d="M8 1a1 1 0 011 1v1.5a3.5 3.5 0 010 7V12a1 1 0 11-2 0v-.5a3.5 3.5 0 010-7V2a1 1 0 011-1zm-2.5 7a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg>
+    </div>
+    <span style="font-size:13px;font-weight:600;color:var(--color-text-primary)">ScienceKit Journal</span>
+    <div style="margin-left:auto;display:flex;gap:8px">
+      <a href="../auth/login.html" class="btn-sm" style="text-decoration:none">Sign in</a>
+      <a href="../auth/register.html" class="btn-sm btn-primary" style="text-decoration:none">Sign up free</a>
+    </div>
+  </div>
+
+  <div class="pub-wrap">
+
+    <!-- Shared by banner -->
+    <div style="background:white;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:10px 14px;margin-bottom:14px;display:flex;align-items:center;gap:10px">
+      <div class="av" style="width:30px;height:30px;font-size:11px;flex-shrink:0">FD</div>
+      <div>
+        <span style="font-size:12px;color:var(--color-text-secondary)">Shared by </span>
+        <span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Firyal D.</span>
+        <span style="font-size:12px;color:var(--color-text-secondary)"> · SpudnikLab · Malang</span>
+      </div>
+      <span class="bg" style="margin-left:auto;background:var(--g50);color:var(--g700);font-size:10px;flex-shrink:0">
+        <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 10 10" style="display:inline;vertical-align:middle;margin-right:2px"><path d="M1 5h8M6 2l3 3-3 3"/></svg>
+        View only
+      </span>
+    </div>
+
+    <!-- Journal header -->
+    <div class="card" style="padding:18px;margin-bottom:14px">
+      <div style="display:flex;align-items:flex-start;gap:14px">
+        <div style="width:56px;height:56px;flex-shrink:0;background:var(--g50);border-radius:var(--border-radius-md);display:flex;align-items:center;justify-content:center;font-size:30px">🌱</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:16px;font-weight:600;color:var(--color-text-primary)">Crop Health 2024</div>
+          <div style="font-size:12px;color:var(--color-text-secondary);margin-top:2px">SpudnikLab · Malang · Started Mar 2024</div>
+          <div style="font-size:12px;color:var(--color-text-secondary);margin-top:6px;line-height:1.6">Monitoring crop health across 3 test fields — soil moisture, pH, pest activity, and visual observations.</div>
+          <div style="margin-top:8px;display:flex;gap:5px;flex-wrap:wrap">
+            <span class="bg bg-green">active</span>
+            <span style="font-size:10px;background:var(--g50);color:var(--g700);padding:2px 7px;border-radius:20px;font-weight:500">agronomy</span>
+            <span style="font-size:10px;background:var(--g50);color:var(--g700);padding:2px 7px;border-radius:20px;font-weight:500">field study</span>
+            <span style="font-size:10px;background:var(--g50);color:var(--g700);padding:2px 7px;border-radius:20px;font-weight:500">soil science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stat-row" style="margin-bottom:16px">
+      <div class="sstat"><div class="sv">12</div><div class="sl">Entries</div></div>
+      <div class="sstat"><div class="sv">486</div><div class="sl">Sensor readings</div></div>
+      <div class="sstat"><div class="sv">Today</div><div class="sl">Last entry</div></div>
+    </div>
+
+    <!-- Entries -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:500">Entries</div>
+      <span style="font-size:11px;color:var(--color-text-secondary)">12 total</span>
+    </div>
+
+    <a class="erow" href="entry-soil-moisture.html" style="text-decoration:none;color:inherit;cursor:pointer">
+      <div class="eico" style="background:var(--g50)">🌡️</div>
+      <div>
+        <div style="font-size:13px;font-weight:500">Soil Moisture – Field A</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">Today · 09:41 · Sensor · 134 readings</div>
+      </div>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:6px">
+        <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+      </div>
+    </a>
+
+    <a class="erow" href="entry-soil-moisture.html" style="text-decoration:none;color:inherit;cursor:pointer">
+      <div class="eico" style="background:var(--a50)">📸</div>
+      <div>
+        <div style="font-size:13px;font-weight:500">Leaf discolouration obs.</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">2 days ago · Photo · 4 images</div>
+      </div>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:6px">
+        <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+      </div>
+    </a>
+
+    <a class="erow" href="entry-soil-moisture.html" style="text-decoration:none;color:inherit;cursor:pointer">
+      <div class="eico" style="background:#f4f4f3">📝</div>
+      <div>
+        <div style="font-size:13px;font-weight:500">Crop height measurement</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">5 days ago · Manual</div>
+      </div>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:6px">
+        <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+      </div>
+    </a>
+
+    <a class="erow" href="entry-soil-moisture.html" style="text-decoration:none;color:inherit;cursor:pointer">
+      <div class="eico" style="background:var(--g50)">🧪</div>
+      <div>
+        <div style="font-size:13px;font-weight:500">pH level test – Field B</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">8 Mar · Sensor · 56 readings</div>
+      </div>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:6px">
+        <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+      </div>
+    </a>
+
+    <a class="erow" href="entry-soil-moisture.html" style="text-decoration:none;color:inherit;cursor:pointer">
+      <div class="eico" style="background:var(--b50)">🌧️</div>
+      <div>
+        <div style="font-size:13px;font-weight:500">Rainfall observation</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">5 Mar · Manual</div>
+      </div>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:6px">
+        <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+      </div>
+    </a>
+
+    <!-- Load more hint -->
+    <div style="text-align:center;padding:10px 0">
+      <span style="font-size:12px;color:var(--color-text-secondary)">+ 7 more entries — sign in to view all</span>
+    </div>
+
+    <!-- Sign up CTA -->
+    <div style="margin-top:20px;background:var(--g50);border:0.5px solid var(--g200);border-radius:var(--border-radius-lg);padding:20px;text-align:center">
+      <div style="font-size:20px;margin-bottom:8px">🔬</div>
+      <div style="font-size:14px;font-weight:600;color:var(--g800);margin-bottom:4px">Start recording your own research</div>
+      <div style="font-size:12px;color:var(--g600);margin-bottom:14px">Join 2,400+ researchers using ScienceKit Journal in the field.</div>
+      <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+        <a href="../auth/register.html" class="btn-sm btn-primary" style="text-decoration:none">Sign up free →</a>
+        <a href="../auth/login.html" class="btn-sm" style="text-decoration:none">Sign in</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="margin-top:24px;text-align:center;font-size:11px;color:var(--color-text-secondary)">
+      Powered by <strong>ScienceKit Journal</strong> · sciencekit.io
+    </div>
+
+  </div>
+
+</body>
+</html>

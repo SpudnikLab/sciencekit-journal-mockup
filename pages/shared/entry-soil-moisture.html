@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Soil Moisture – Field A · Crop Health 2024 · ScienceKit</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    body { background:#f8f9f5;min-height:100vh;margin:0 }
+    .pub-nav { background:white;border-bottom:0.5px solid var(--color-border-secondary);padding:0 20px;height:52px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:10 }
+    .pub-wrap { max-width:640px;margin:0 auto;padding:20px 16px 48px }
+  </style>
+</head>
+<body>
+
+  <!-- Public nav -->
+  <div class="pub-nav">
+    <div class="logo-box" style="width:28px;height:28px">
+      <svg viewBox="0 0 16 16"><path d="M8 1a1 1 0 011 1v1.5a3.5 3.5 0 010 7V12a1 1 0 11-2 0v-.5a3.5 3.5 0 010-7V2a1 1 0 011-1zm-2.5 7a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg>
+    </div>
+    <span style="font-size:13px;font-weight:600;color:var(--color-text-primary)">ScienceKit Journal</span>
+    <div style="margin-left:auto;display:flex;gap:8px">
+      <a href="../auth/login.html" class="btn-sm" style="text-decoration:none">Sign in</a>
+      <a href="../auth/register.html" class="btn-sm btn-primary" style="text-decoration:none">Sign up free</a>
+    </div>
+  </div>
+
+  <div class="pub-wrap">
+
+    <!-- Breadcrumb -->
+    <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--color-text-secondary);margin-bottom:14px">
+      <a href="crop-health-2024.html" style="color:inherit;text-decoration:none;display:flex;align-items:center;gap:3px">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 12 12"><path d="M8 9.5L4.5 6 8 2.5"/></svg>
+        Crop Health 2024
+      </a>
+      <span>›</span>
+      <span style="color:var(--color-text-primary);font-weight:500">Soil Moisture – Field A</span>
+    </div>
+
+    <!-- Shared by banner -->
+    <div style="background:white;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:8px 14px;margin-bottom:14px;display:flex;align-items:center;gap:8px">
+      <div class="av" style="width:26px;height:26px;font-size:10px;flex-shrink:0">FD</div>
+      <span style="font-size:12px;color:var(--color-text-secondary)">Shared by <strong style="color:var(--color-text-primary)">Firyal D.</strong> · SpudnikLab</span>
+      <span class="bg" style="margin-left:auto;background:var(--g50);color:var(--g700);font-size:10px;flex-shrink:0">View only</span>
+    </div>
+
+    <!-- Entry header card -->
+    <div class="card" style="padding:18px;margin-bottom:12px">
+      <div style="display:flex;align-items:flex-start;gap:12px">
+        <div style="width:50px;height:50px;flex-shrink:0;background:var(--g50);border-radius:var(--border-radius-md);display:flex;align-items:center;justify-content:center;font-size:26px">🌡️</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:15px;font-weight:600">Soil Moisture – Field A</div>
+          <div style="font-size:11px;color:var(--color-text-secondary);margin-top:3px">Mon 16 Mar 2026 · 09:41 — 09:43</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center">
+            <span class="bg bg-green">synced</span>
+            <span style="font-size:11px;background:var(--g50);color:var(--g700);padding:2px 7px;border-radius:4px;font-weight:500">📡 Sensor Data</span>
+            <span style="font-size:11px;color:var(--color-text-secondary)">
+              <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 11 11" style="display:inline;vertical-align:middle"><circle cx="5.5" cy="5.5" r="4"/><path d="M5.5 3.5v2.5l1.5 1"/></svg>
+              2m 14s
+            </span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;margin-top:12px;padding-top:12px;border-top:0.5px solid var(--color-border-secondary)">
+        <svg width="12" height="12" fill="none" stroke="var(--color-text-secondary)" stroke-width="1.5" viewBox="0 0 12 12"><circle cx="6" cy="5" r="2"/><path d="M6 1C3.8 1 2 2.8 2 5c0 3 4 7 4 7s4-4 4-7c0-2.2-1.8-4-4-4z"/></svg>
+        <span style="font-size:12px;color:var(--color-text-secondary)">Field A · SpudnikLab, Malang</span>
+      </div>
+    </div>
+
+    <!-- Sensor data section -->
+    <div class="card" style="padding:16px;margin-bottom:12px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div>
+          <div style="font-size:13px;font-weight:500">Sensor readings</div>
+          <div style="font-size:11px;color:var(--color-text-secondary);margin-top:1px">134 readings · ScienceKit Sensor v2 (USB)</div>
+        </div>
+        <span class="bg" style="font-size:10px;background:#f3f4f6;color:var(--gr500)">Read only</span>
+      </div>
+
+      <!-- Summary stats -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px">
+        <div style="background:var(--g50);border-radius:var(--border-radius-md);padding:10px;text-align:center">
+          <div style="font-size:16px;font-weight:600;color:var(--g800)">68.2<span style="font-size:10px">%</span></div>
+          <div style="font-size:10px;color:var(--g600);margin-top:1px">Avg moisture</div>
+        </div>
+        <div style="background:#f0fdf4;border-radius:var(--border-radius-md);padding:10px;text-align:center">
+          <div style="font-size:16px;font-weight:600;color:#166534">74.8<span style="font-size:10px">%</span></div>
+          <div style="font-size:10px;color:#15803d;margin-top:1px">Max</div>
+        </div>
+        <div style="background:#fffbeb;border-radius:var(--border-radius-md);padding:10px;text-align:center">
+          <div style="font-size:16px;font-weight:600;color:#92400e">61.4<span style="font-size:10px">%</span></div>
+          <div style="font-size:10px;color:#b45309;margin-top:1px">Min</div>
+        </div>
+      </div>
+
+      <!-- Bar chart (CSS) -->
+      <div style="margin-bottom:6px">
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-bottom:6px">Moisture % over time</div>
+        <div style="display:flex;align-items:flex-end;gap:1.5px;height:56px;background:var(--g50);border-radius:6px;padding:6px 8px;overflow:hidden">
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:75%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:78%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:82%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:85%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:87%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:83%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:86%"></div>
+          <div style="flex:1;background:var(--g500);border-radius:1px 1px 0 0;height:90%"></div>
+          <div style="flex:1;background:var(--g500);border-radius:1px 1px 0 0;height:88%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:84%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:80%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:78%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:80%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:84%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:82%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:78%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:75%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:73%"></div>
+          <div style="flex:1;background:var(--g200);border-radius:1px 1px 0 0;height:70%"></div>
+          <div style="flex:1;background:var(--g200);border-radius:1px 1px 0 0;height:72%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:76%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:80%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:84%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:86%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:85%"></div>
+          <div style="flex:1;background:var(--g500);border-radius:1px 1px 0 0;height:88%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:84%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:82%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:79%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:77%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:80%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:83%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:86%"></div>
+          <div style="flex:1;background:var(--g500);border-radius:1px 1px 0 0;height:89%"></div>
+          <div style="flex:1;background:var(--g500);border-radius:1px 1px 0 0;height:91%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:87%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:84%"></div>
+          <div style="flex:1;background:var(--g400);border-radius:1px 1px 0 0;height:82%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:78%"></div>
+          <div style="flex:1;background:var(--g300);border-radius:1px 1px 0 0;height:76%"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--color-text-secondary);margin-top:4px;padding:0 4px">
+          <span>09:41:00</span>
+          <span>09:42:00</span>
+          <span>09:43:14</span>
+        </div>
+      </div>
+
+      <!-- Last readings table -->
+      <div style="margin-top:12px">
+        <div style="font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:6px">Last 6 readings</div>
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead>
+            <tr style="border-bottom:0.5px solid var(--color-border-secondary)">
+              <th style="text-align:left;padding:5px 0;font-weight:500;color:var(--color-text-secondary)">Time</th>
+              <th style="text-align:right;padding:5px 0;font-weight:500;color:var(--color-text-secondary)">Moisture</th>
+              <th style="text-align:right;padding:5px 0;font-weight:500;color:var(--color-text-secondary)">Temp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:0.5px solid var(--color-border-secondary)">
+              <td style="padding:6px 0;color:var(--color-text-secondary)">09:43:02</td>
+              <td style="padding:6px 0;text-align:right;font-weight:500">74.1%</td>
+              <td style="padding:6px 0;text-align:right;color:var(--color-text-secondary)">28.5°C</td>
+            </tr>
+            <tr style="border-bottom:0.5px solid var(--color-border-secondary)">
+              <td style="padding:6px 0;color:var(--color-text-secondary)">09:42:48</td>
+              <td style="padding:6px 0;text-align:right;font-weight:500">73.8%</td>
+              <td style="padding:6px 0;text-align:right;color:var(--color-text-secondary)">28.5°C</td>
+            </tr>
+            <tr style="border-bottom:0.5px solid var(--color-border-secondary)">
+              <td style="padding:6px 0;color:var(--color-text-secondary)">09:42:34</td>
+              <td style="padding:6px 0;text-align:right;font-weight:500">71.4%</td>
+              <td style="padding:6px 0;text-align:right;color:var(--color-text-secondary)">28.4°C</td>
+            </tr>
+            <tr style="border-bottom:0.5px solid var(--color-border-secondary)">
+              <td style="padding:6px 0;color:var(--color-text-secondary)">09:42:20</td>
+              <td style="padding:6px 0;text-align:right;font-weight:500">68.6%</td>
+              <td style="padding:6px 0;text-align:right;color:var(--color-text-secondary)">28.4°C</td>
+            </tr>
+            <tr style="border-bottom:0.5px solid var(--color-border-secondary)">
+              <td style="padding:6px 0;color:var(--color-text-secondary)">09:42:06</td>
+              <td style="padding:6px 0;text-align:right;font-weight:500">65.2%</td>
+              <td style="padding:6px 0;text-align:right;color:var(--color-text-secondary)">28.3°C</td>
+            </tr>
+            <tr>
+              <td style="padding:6px 0;color:var(--color-text-secondary)">09:41:52</td>
+              <td style="padding:6px 0;text-align:right;font-weight:500">67.8%</td>
+              <td style="padding:6px 0;text-align:right;color:var(--color-text-secondary)">28.1°C</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Sign in to view all -->
+        <div style="margin-top:8px;background:#f9fafb;border-radius:6px;padding:8px 10px;display:flex;align-items:center;gap:8px">
+          <svg width="13" height="13" fill="none" stroke="var(--gr400)" stroke-width="1.5" viewBox="0 0 13 13"><rect x="3.5" y="1.5" width="6" height="4" rx="1"/><path d="M2 7h9v4a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>
+          <span style="font-size:11px;color:var(--color-text-secondary)">128 more readings available — </span>
+          <a href="../auth/login.html" class="link" style="font-size:11px;white-space:nowrap">Sign in to view all</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes section -->
+    <div class="card" style="padding:16px;margin-bottom:12px">
+      <div style="font-size:13px;font-weight:500;margin-bottom:8px">Notes & hypothesis</div>
+      <div style="font-size:13px;color:var(--color-text-primary);line-height:1.6">Checked after 3-day dry spell. Expected moisture levels to be below normal threshold. Readings came in higher than expected — possibly due to residual capillary moisture from previous irrigation cycle.</div>
+    </div>
+
+    <!-- Tags -->
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px">
+      <span class="pill pill-green on">soil</span>
+      <span class="pill pill-green on">moisture</span>
+      <span class="pill pill-green on">field-a</span>
+      <span class="pill pill-green on">sensor</span>
+    </div>
+
+    <!-- Sign up CTA -->
+    <div style="background:var(--g50);border:0.5px solid var(--g200);border-radius:var(--border-radius-lg);padding:18px;text-align:center">
+      <div style="font-size:13px;font-weight:600;color:var(--g800);margin-bottom:4px">Want to record your own field data?</div>
+      <div style="font-size:12px;color:var(--g600);margin-bottom:14px">Connect a sensor and start collecting readings in minutes.</div>
+      <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+        <a href="../auth/register.html" class="btn-sm btn-primary" style="text-decoration:none">Sign up free →</a>
+        <a href="../auth/login.html" class="link" style="font-size:12px;display:flex;align-items:center">Already have an account?</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="margin-top:24px;text-align:center;font-size:11px;color:var(--color-text-secondary)">
+      Powered by <strong>ScienceKit Journal</strong> · sciencekit.io
+    </div>
+
+  </div>
+
+</body>
+</html>

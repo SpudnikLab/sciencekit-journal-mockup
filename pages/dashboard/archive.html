@@ -1,0 +1,59 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Archive — ScienceKit Journal</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+<div class="shell">
+  <div class="sb"><div class="sb-logo"><div class="logo-box"><svg viewBox="0 0 16 16"><path d="M8 1a1 1 0 011 1v1.5a3.5 3.5 0 010 7V12a1 1 0 11-2 0v-.5a3.5 3.5 0 010-7V2a1 1 0 011-1zm-2.5 7a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg></div><div class="logo-text">ScienceKit<br><span class="logo-sub">Journal</span></div></div>
+  <div class="sb-nav"><div class="sb-sec">Main</div><a class="sb-item " href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Dashboard</a><a class="sb-item " href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>My Journals</a><a class="sb-item " href="create.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v5M5 7.5h5"/></svg>Create Journal Entry</a><div class="sb-sec">Community</div><a class="sb-item " href="citizen.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="5" r="2.5"/><path d="M2 13c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg>Share to Citizen Science</a><a class="sb-item " href="p2p.html"><svg viewBox="0 0 15 15"><circle cx="3.5" cy="7.5" r="2"/><circle cx="11.5" cy="7.5" r="2"/><circle cx="7.5" cy="3" r="2"/><path d="M5.4 7H9.6M7.5 5v1.5"/></svg>P2P Collaboration</a><div class="sb-sec">Explore</div><a class="sb-item " href="usecases.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v2.5l2 1"/></svg>Use Cases & Experiments</a><a class="sb-item on" href="archive.html"><svg viewBox="0 0 15 15"><rect x="1.5" y="3" width="12" height="3" rx="1"/><path d="M2.5 6v7h10V6"/><path d="M6 9h3"/></svg>Archive</a></div>
+  <div class="sb-bottom"><div class="sb-user"><div class="av">FD</div><div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Firyal D.</div><div style="font-size:11px;color:var(--color-text-secondary)">Researcher</div></div><a href="../auth/login.html" style="margin-left:auto;color:var(--gr400)"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 2H2a1 1 0 00-1 1v8a1 1 0 001 1h3M9 10l3-3-3-3M12 7H5"/></svg></a></div></div>
+</div>
+  <div class="main">
+    <div class="page on">
+      <div class="topbar"><span class="tb-title">Archive</span></div>
+<div class="scroll"><div class="pad">
+  <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:14px">Archived entries and journals — read-only. Restore anytime.</div>
+  <div class="erow" style="opacity:.75"><div class="eico" style="background:var(--gr50)">📦</div><div><div style="font-size:13px;font-weight:500">Irrigation Study 2022</div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">Archived · Nov 2022 · 34 entries</div></div><div style="margin-left:auto"><button class="btn-sm" style="font-size:11px;padding:4px 10px">Restore</button></div></div>
+  <div class="erow" style="opacity:.75"><div class="eico" style="background:var(--gr50)">📦</div><div><div style="font-size:13px;font-weight:500">Field Trial – Batch 3</div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">Archived · Aug 2023 · 17 entries</div></div><div style="margin-left:auto"><button class="btn-sm" style="font-size:11px;padding:4px 10px">Restore</button></div></div>
+</div></div>
+    </div>
+  </div>
+  <!-- Community popup -->
+  <div class="bnav-comm-overlay" id="comm-overlay" onclick="closeComm()"></div>
+  <div class="bnav-comm-popup" id="comm-popup">
+    <a href="citizen.html">
+      <div class="cp-ico" style="background:#eaf4ea">🌍</div>
+      <div><div class="cp-title">Share to Platforms</div><div class="cp-sub">ISRIC WoSIS · iNaturalist · SoilGrids</div></div>
+    </a>
+    <a href="p2p.html">
+      <div class="cp-ico" style="background:var(--p50)">🔗</div>
+      <div><div class="cp-title">P2P Collaboration</div><div class="cp-sub">Connect &amp; co-research</div></div>
+    </a>
+  </div>
+  <nav class="bnav">
+    <a class="bnav-item" href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Home</a>
+    <a class="bnav-item" href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>Journals</a>
+    <a class="bnav-item" href="create-journal.html"><div style="width:32px;height:32px;background:var(--g500);border-radius:50%;display:flex;align-items:center;justify-content:center;color:black;font-size:22px;line-height:1;font-weight:300">+</div>New</a>
+    <button class="bnav-item" onclick="toggleComm(event)"><svg viewBox="0 0 15 15"><circle cx="3.5" cy="7.5" r="2"/><circle cx="11.5" cy="7.5" r="2"/><circle cx="7.5" cy="3" r="2"/><path d="M5.4 7H9.6M7.5 5v1.5"/></svg>Community</button>
+    <a class="bnav-item on" href="archive.html"><svg viewBox="0 0 15 15"><rect x="1.5" y="3" width="12" height="3" rx="1"/><path d="M2.5 6v7h10V6"/><path d="M6 9h3"/></svg>Archive</a>
+  </nav>
+</div>
+  <script>
+    function toggleComm(e) {
+      e.stopPropagation();
+      var p = document.getElementById('comm-popup');
+      var o = document.getElementById('comm-overlay');
+      var open = p.classList.contains('open');
+      p.classList.toggle('open', !open);
+      o.classList.toggle('open', !open);
+    }
+    function closeComm() {
+      document.getElementById('comm-popup').classList.remove('open');
+      document.getElementById('comm-overlay').classList.remove('open');
+    }
+  </script></body>
+</html>

@@ -1,0 +1,270 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Irrigation Study — ScienceKit Journal</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+<div class="shell">
+
+  <!-- Sidebar -->
+  <div class="sb" id="sidebar">
+    <div class="sb-logo">
+      <div class="logo-box"><svg viewBox="0 0 16 16"><path d="M8 1a1 1 0 011 1v1.5a3.5 3.5 0 010 7V12a1 1 0 11-2 0v-.5a3.5 3.5 0 010-7V2a1 1 0 011-1zm-2.5 7a2.5 2.5 0 105 0 2.5 2.5 0 00-5 0z"/></svg></div>
+      <div class="logo-text">ScienceKit<br><span class="logo-sub">Journal</span></div>
+    </div>
+    <div class="sb-nav">
+      <div class="sb-sec">Main</div>
+      <a class="sb-item" href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Dashboard</a>
+      <a class="sb-item on" href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>My Journals</a>
+      <a class="sb-item" href="create-journal.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v5M5 7.5h5"/></svg>New Journal</a>
+      <div class="sb-sec">Community</div>
+      <a class="sb-item" href="citizen.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="5" r="2.5"/><path d="M2 13c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg>Share to Citizen Science</a>
+      <a class="sb-item" href="p2p.html"><svg viewBox="0 0 15 15"><circle cx="3.5" cy="7.5" r="2"/><circle cx="11.5" cy="7.5" r="2"/><circle cx="7.5" cy="3" r="2"/><path d="M5.4 7H9.6M7.5 5v1.5"/></svg>P2P Collaboration</a>
+      <div class="sb-sec">Explore</div>
+      <a class="sb-item" href="usecases.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v2.5l2 1"/></svg>Use Cases & Experiments</a>
+      <a class="sb-item" href="archive.html"><svg viewBox="0 0 15 15"><rect x="1.5" y="3" width="12" height="3" rx="1"/><path d="M2.5 6v7h10V6"/><path d="M6 9h3"/></svg>Archive</a>
+    </div>
+    <div class="sb-bottom">
+      <div class="sb-user">
+        <div class="av">FD</div>
+        <div><div style="font-size:12px;font-weight:500;color:var(--color-text-primary)">Firyal D.</div><div style="font-size:11px;color:var(--color-text-secondary)">Researcher</div></div>
+        <a href="../auth/login.html" style="margin-left:auto;color:var(--gr400)">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 2H2a1 1 0 00-1 1v8a1 1 0 001 1h3M9 10l3-3-3-3M12 7H5"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="page on">
+
+      <!-- Topbar -->
+      <div class="topbar">
+        <div style="display:flex;align-items:center;gap:4px;min-width:0">
+          <a href="journals.html" style="display:flex;align-items:center;color:var(--color-text-secondary);padding:4px;flex-shrink:0">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 16 16"><path d="M10 12L6 8l4-4"/></svg>
+          </a>
+          <span class="tb-title" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Irrigation Study</span>
+          <span class="bg bg-amber" style="flex-shrink:0;font-size:10px">paused</span>
+        </div>
+        <div class="tb-right">
+          <button class="btn-sm btn-primary" style="white-space:nowrap" onclick="alert('Journal resumed!')">Resume</button>
+          <button style="background:none;border:none;padding:4px 6px;cursor:pointer;color:var(--color-text-secondary);display:flex;align-items:center;border-radius:6px;flex-shrink:0">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 15 15"><circle cx="7.5" cy="3" r="1.2"/><circle cx="7.5" cy="7.5" r="1.2"/><circle cx="7.5" cy="12" r="1.2"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="scroll"><div class="pad">
+
+        <!-- Paused notice banner -->
+        <div style="background:#fffbeb;border:0.5px solid #fcd34d;border-radius:var(--border-radius-md);padding:12px 14px;margin-bottom:14px;display:flex;align-items:flex-start;gap:10px">
+          <svg width="16" height="16" fill="none" stroke="#d97706" stroke-width="1.5" viewBox="0 0 16 16" style="flex-shrink:0;margin-top:1px"><circle cx="8" cy="8" r="6"/><path d="M8 5v3.5"/><circle cx="8" cy="11" r=".7" fill="#d97706"/></svg>
+          <div>
+            <div style="font-size:12px;font-weight:600;color:#92400e">Journal is paused</div>
+            <div style="font-size:11px;color:#b45309;margin-top:2px">New entries cannot be added while paused. Resume the journal to continue recording data.</div>
+          </div>
+          <button class="btn-sm btn-primary" style="margin-left:auto;flex-shrink:0;font-size:11px;padding:5px 10px" onclick="alert('Journal resumed!')">Resume</button>
+        </div>
+
+        <!-- Journal header card -->
+        <div class="card" style="padding:16px;margin-bottom:14px">
+          <div style="display:flex;align-items:flex-start;gap:14px">
+            <div style="width:52px;height:52px;flex-shrink:0;background:var(--a50);border-radius:var(--border-radius-md);display:flex;align-items:center;justify-content:center;font-size:28px">💧</div>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:14px;font-weight:600;color:var(--color-text-primary)">Irrigation Study</div>
+              <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">SpudnikLab · Malang · Nov 2023 – paused</div>
+              <div style="font-size:12px;color:var(--color-text-secondary);margin-top:6px;line-height:1.5">Drip irrigation efficiency study across paddy field sections. Monitoring water flow, pH, and soil absorption rates.</div>
+              <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">
+                <span style="font-size:10px;background:var(--a50);color:#92400e;padding:2px 7px;border-radius:20px;font-weight:500">irrigation</span>
+                <span style="font-size:10px;background:var(--a50);color:#92400e;padding:2px 7px;border-radius:20px;font-weight:500">water science</span>
+                <span style="font-size:10px;background:var(--a50);color:#92400e;padding:2px 7px;border-radius:20px;font-weight:500">paddy field</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stat-row" style="margin-bottom:14px">
+          <div class="sstat"><div class="sv">21</div><div class="sl">Entries</div></div>
+          <div class="sstat"><div class="sv">890</div><div class="sl">Sensor readings</div></div>
+          <div class="sstat"><div class="sv">28 Nov</div><div class="sl">Last entry</div></div>
+        </div>
+
+        <!-- Entries header + filters -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <div style="font-size:13px;font-weight:500">Entries</div>
+          <span style="font-size:11px;color:var(--color-text-secondary)">21 total · read only</span>
+        </div>
+        <div style="display:flex;gap:5px;margin-bottom:10px;flex-wrap:wrap">
+          <span class="pill pill-green on">All</span>
+          <span class="pill pill-green">Sensor</span>
+          <span class="pill pill-green">Photo</span>
+          <span class="pill pill-green">Audio</span>
+          <span class="pill pill-green">Manual</span>
+        </div>
+
+        <!-- Entry list -->
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:var(--b50)">💧</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Final irrigation cycle – Section C</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">28 Nov 2023 · Sensor · 112 readings</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:var(--g50)">🧪</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Water pH measurement</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">25 Nov 2023 · Sensor · 43 readings</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:var(--a50)">📸</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Drip system inspection</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">20 Nov 2023 · Photo · 8 images</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:var(--b50)">💧</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Flow rate log – Section A</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">15 Nov 2023 · Sensor · 204 readings</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:#f4f4f3">📝</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Reservoir level observation</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">10 Nov 2023 · Manual</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:var(--b50)">💧</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Soil absorption test – Section B</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">5 Nov 2023 · Sensor · 178 readings</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:var(--a50)">📸</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Clogged nozzle documentation</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">1 Nov 2023 · Photo · 3 images</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <div class="erow" style="cursor:pointer">
+          <div class="eico" style="background:#f4f4f3">📝</div>
+          <div>
+            <div style="font-size:13px;font-weight:500">Weekly summary – Week 4</div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:2px">28 Oct 2023 · Manual</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <span class="bg bg-green">synced</span>
+            <svg width="12" height="12" fill="none" stroke="var(--gr300)" stroke-width="1.5" viewBox="0 0 12 12"><path d="M4 2l4 4-4 4"/></svg>
+          </div>
+        </div>
+
+        <!-- Show more -->
+        <div style="text-align:center;padding:10px 0 4px">
+          <span class="link" style="font-size:12px">Show 13 more entries</span>
+        </div>
+
+        <!-- Journal actions -->
+        <div style="margin-top:16px;padding-top:14px;border-top:0.5px solid var(--color-border-secondary)">
+          <div style="font-size:12px;font-weight:500;color:var(--color-text-secondary);margin-bottom:8px">Journal actions</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+            <button class="btn-sm btn-primary" style="padding:10px 8px;display:flex;flex-direction:column;align-items:center;gap:5px;height:auto;border-radius:var(--border-radius-md)" onclick="alert('Journal resumed!')">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 16 16"><polygon points="5,3 13,8 5,13"/></svg>
+              <span style="font-size:11px">Resume</span>
+            </button>
+            <button style="background:white;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:10px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px">
+              <svg width="16" height="16" fill="none" stroke="var(--color-text-secondary)" stroke-width="1.5" viewBox="0 0 16 16"><path d="M8 2v9M4 8l4 4 4-4"/><path d="M2 14h12"/></svg>
+              <span style="font-size:11px;color:var(--color-text-secondary)">Export data</span>
+            </button>
+            <button style="background:white;border:0.5px solid #fecaca;border-radius:var(--border-radius-md);padding:10px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px">
+              <svg width="16" height="16" fill="none" stroke="#dc2626" stroke-width="1.5" viewBox="0 0 16 16"><rect x="1.5" y="3" width="13" height="3" rx="1"/><path d="M2.5 6v7h11V6"/><path d="M6.5 9h3"/></svg>
+              <span style="font-size:11px;color:#dc2626">Archive</span>
+            </button>
+          </div>
+        </div>
+
+      </div></div>
+    </div>
+  </div>
+
+  <!-- Community popup -->
+  <div class="bnav-comm-overlay" id="comm-overlay" onclick="closeComm()"></div>
+  <div class="bnav-comm-popup" id="comm-popup">
+    <a href="citizen.html">
+      <div class="cp-ico" style="background:#eaf4ea">🌍</div>
+      <div><div class="cp-title">Share to Platforms</div><div class="cp-sub">ISRIC WoSIS · iNaturalist · SoilGrids</div></div>
+    </a>
+    <a href="p2p.html">
+      <div class="cp-ico" style="background:var(--p50)">🔗</div>
+      <div><div class="cp-title">P2P Collaboration</div><div class="cp-sub">Connect &amp; co-research</div></div>
+    </a>
+  </div>
+  <nav class="bnav">
+    <a class="bnav-item" href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Home</a>
+    <a class="bnav-item on" href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>Journals</a>
+    <a class="bnav-item" href="create-journal.html"><div style="width:32px;height:32px;background:var(--g500);border-radius:50%;display:flex;align-items:center;justify-content:center;color:black;font-size:22px;line-height:1;font-weight:300">+</div>New</a>
+    <button class="bnav-item" onclick="toggleComm(event)"><svg viewBox="0 0 15 15"><circle cx="3.5" cy="7.5" r="2"/><circle cx="11.5" cy="7.5" r="2"/><circle cx="7.5" cy="3" r="2"/><path d="M5.4 7H9.6M7.5 5v1.5"/></svg>Community</button>
+    <a class="bnav-item" href="archive.html"><svg viewBox="0 0 15 15"><rect x="1.5" y="3" width="12" height="3" rx="1"/><path d="M2.5 6v7h10V6"/><path d="M6 9h3"/></svg>Archive</a>
+  </nav>
+</div>
+  <script>
+    function toggleComm(e) {
+      e.stopPropagation();
+      var p = document.getElementById('comm-popup');
+      var o = document.getElementById('comm-overlay');
+      var open = p.classList.contains('open');
+      p.classList.toggle('open', !open);
+      o.classList.toggle('open', !open);
+    }
+    function closeComm() {
+      document.getElementById('comm-popup').classList.remove('open');
+      document.getElementById('comm-overlay').classList.remove('open');
+    }
+  </script></body>
+</html>
