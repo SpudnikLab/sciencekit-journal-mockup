@@ -16,16 +16,10 @@
       <div class="logo-text">ScienceKit<br><span class="logo-sub">Journal</span></div>
     </div>
     <div class="sb-nav">
-      <div class="sb-sec">Main</div>
-      <a class="sb-item" href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Dashboard</a>
-      <a class="sb-item" href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>My Journals</a>
-      <a class="sb-item on" href="create-journal.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v5M5 7.5h5"/></svg>New Journal</a>
-      <div class="sb-sec">Community</div>
-      <a class="sb-item" href="citizen.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="5" r="2.5"/><path d="M2 13c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg>Share to Citizen Science</a>
-      <a class="sb-item" href="p2p.html"><svg viewBox="0 0 15 15"><circle cx="3.5" cy="7.5" r="2"/><circle cx="11.5" cy="7.5" r="2"/><circle cx="7.5" cy="3" r="2"/><path d="M5.4 7H9.6M7.5 5v1.5"/></svg>P2P Collaboration</a>
-      <div class="sb-sec">Explore</div>
-      <a class="sb-item" href="usecases.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v2.5l2 1"/></svg>Use Cases & Experiments</a>
-      <a class="sb-item" href="archive.html"><svg viewBox="0 0 15 15"><rect x="1.5" y="3" width="12" height="3" rx="1"/><path d="M2.5 6v7h10V6"/><path d="M6 9h3"/></svg>Archive</a>
+      <a class="sb-item" href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Home</a>
+      <a class="sb-item on" href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>Journals</a>
+      <a class="sb-item" href="create.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v5M5 7.5h5"/></svg>Create New Journal Entry</a>
+      <a class="sb-item" href="citizen.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="5" r="2.5"/><path d="M2 13c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg>Community</a>
     </div>
     <div class="sb-bottom">
       <div class="sb-user">
@@ -56,7 +50,6 @@
 
         <!-- What is a journal banner -->
         <div style="background:var(--g50);border:0.5px solid var(--g200);border-radius:var(--border-radius-md);padding:12px 14px;margin-bottom:14px;display:flex;gap:10px;align-items:flex-start">
-          <div style="font-size:20px;flex-shrink:0;line-height:1.2">📚</div>
           <div>
             <div style="font-size:12px;font-weight:600;color:var(--g800)">You're creating a Journal</div>
             <div style="font-size:11px;color:var(--g600);margin-top:2px;line-height:1.6">A journal is a <strong>research container</strong> — like a project folder. Once created, you can add multiple <em>entries</em> inside it each time you go to the field.</div>
@@ -73,33 +66,10 @@
             <input class="fi" placeholder="E.g. Crop Health 2025, Mosquito Survey Phase 2…">
           </div>
 
-          <!-- Emoji / icon picker -->
-          <div class="fg">
-            <label class="fl">Icon</label>
-            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:4px">
-              <div style="width:40px;height:40px;border-radius:8px;border:1.5px solid var(--g400);background:var(--g50);display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer" title="selected">🌱</div>
-              <div style="width:40px;height:40px;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">🦟</div>
-              <div style="width:40px;height:40px;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">💧</div>
-              <div style="width:40px;height:40px;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">🔬</div>
-              <div style="width:40px;height:40px;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">🌍</div>
-              <div style="width:40px;height:40px;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">🧪</div>
-              <div style="width:40px;height:40px;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">🌡️</div>
-              <div style="width:40px;height:40px;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer">📊</div>
-            </div>
-          </div>
 
           <div class="fg">
             <label class="fl">Description</label>
             <textarea class="fi fi-ta" placeholder="What will you study in this journal? Describe the goal or scope of the research."></textarea>
-          </div>
-
-          <div class="fg">
-            <label class="fl">Tags</label>
-            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
-              <span class="pill pill-green on">agronomy</span>
-              <span class="pill pill-green">soil science</span>
-              <span class="pill pill-green">+ Add</span>
-            </div>
           </div>
         </div>
 

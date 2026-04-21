@@ -19,7 +19,6 @@
 
   <!-- Intro banner -->
   <div style="background:var(--b50);border:0.5px solid var(--b200);border-radius:var(--border-radius-md);padding:12px 14px;margin-bottom:16px;display:flex;gap:10px;align-items:flex-start">
-    <div style="font-size:18px;flex-shrink:0">🌍</div>
     <div>
       <div style="font-size:13px;font-weight:500;color:var(--b800)">Contribute to open science</div>
       <div style="font-size:12px;color:var(--b700);margin-top:2px;line-height:1.5">Select a platform to share your journal data with the global research community.</div>
@@ -32,7 +31,6 @@
   <!-- ISRIC WoSIS -->
   <div class="pcard" style="margin-bottom:10px">
     <div class="pcard-hdr">
-      <div style="width:40px;height:40px;border-radius:10px;background:#eaf4ea;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">🌱</div>
       <div style="flex:1;min-width:0">
         <div class="pcard-title">ISRIC WoSIS</div>
         <div class="pcard-sub">World Soil Information Service</div>
@@ -50,7 +48,6 @@
   <!-- iNaturalist -->
   <div class="pcard" style="margin-bottom:10px">
     <div class="pcard-hdr">
-      <div style="width:40px;height:40px;border-radius:10px;background:#f0f9f4;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">🦋</div>
       <div style="flex:1;min-width:0">
         <div class="pcard-title">iNaturalist</div>
         <div class="pcard-sub">Biodiversity observation network</div>
@@ -68,7 +65,6 @@
   <!-- SoilGrids -->
   <div class="pcard">
     <div class="pcard-hdr">
-      <div style="width:40px;height:40px;border-radius:10px;background:var(--b50);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">📊</div>
       <div style="flex:1;min-width:0">
         <div class="pcard-title">SoilGrids</div>
         <div class="pcard-sub">Global soil data visualization</div>
@@ -111,11 +107,12 @@
     </a>
   </div>
   <nav class="bnav">
-    <a class="bnav-item" href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Home</a>
-    <a class="bnav-item" href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>Journals</a>
-    <a class="bnav-item" href="create-journal.html"><div style="width:32px;height:32px;background:var(--g500);border-radius:50%;display:flex;align-items:center;justify-content:center;color:black;font-size:22px;line-height:1;font-weight:300">+</div>New</a>
-    <button class="bnav-item on" onclick="toggleComm(event)"><svg viewBox="0 0 15 15"><circle cx="3.5" cy="7.5" r="2"/><circle cx="11.5" cy="7.5" r="2"/><circle cx="7.5" cy="3" r="2"/><path d="M5.4 7H9.6M7.5 5v1.5"/></svg>Community</button>
-    <a class="bnav-item" href="archive.html"><svg viewBox="0 0 15 15"><rect x="1.5" y="3" width="12" height="3" rx="1"/><path d="M2.5 6v7h10V6"/><path d="M6 9h3"/></svg>Archive</a>
+    <div class="sb-nav">
+      <a class="sb-item" href="dashboard.html"><svg viewBox="0 0 15 15"><path d="M2 7L7.5 2 13 7v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/></svg>Home</a>
+      <a class="sb-item" href="journals.html"><svg viewBox="0 0 15 15"><rect x="2" y="2" width="11" height="11" rx="1.5"/><path d="M5 5h5M5 8h5M5 11h3"/></svg>Journals</a>
+      <a class="sb-item" href="create.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 5v5M5 7.5h5"/></svg>Create New Journal Entry</a>
+      <a class="sb-item on" href="citizen.html"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="5" r="2.5"/><path d="M2 13c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg>Community</a>
+    </div>
   </nav>
 </div>
   <script>
